@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>actividad2</title>
+    <title>Verificar numero</title>
 </head>
 <body>
+    <h1>Verificar si un numero es positivo o negativo</h1>
+    <script>
+        // Solicitar al usuario que introduzca un número
+        var numero = prompt("Por favor, introduce un número:");
 
-<H1>Ejercicio 1: Sistema de Gestión de una Universidad</H1>
-    
-<img src="derisbel0.png" alt="flor" width="530" height="400">
+        // Convertir el valor a un número
+        numero = Number(numero);
 
-    
-
-<h1>Ejercicio 2: Sistema de Reservas de Hotel</h1>
-
-<img src="id_hotel.png" alt="flor" width="530" height="400">
-
+        // Verificar si el número es positivo o negativo
+        if (numero >= 0) {
+            alert("El número es positivo.");
+        } else {
+            alert("El número es negativo.");
+        }
+    </script>
 </body>
 </html>
