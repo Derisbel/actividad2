@@ -1,15 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>el promedio de 3 numeros </title>
+    <title>Mi Página Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #ccc4c4;
+        }
+        form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f7f2f2;
+        }
+    </style>
 </head>
 <body>
-    <p>El promedio de 3 numeros</p>
-    <p> Sueldo</p>
 
-<script src="mains.js" ></script>
+    <h1>Bienvenido a mi Página Web</h1>
+
+    <h2>Tabla Avanzada</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+                <th>Ocupación</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ana</td>
+                <td>28</td>
+                <td>Madrid</td>
+                <td>Ingeniera</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Carlos</td>
+                <td>35</td>
+                <td>Barcelona</td>
+                <td>Diseñador</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Lucía</td>
+                <td>23</td>
+                <td>Valencia</td>
+                <td>Estudiante</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>José</td>
+                <td>40</td>
+                <td>Sevilla</td>
+                <td>Profesor</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Formulario de Contacto</h2>
+    <form>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="intereses">Selecciona tus intereses:</label><br>
+        <select id="intereses" name="intereses" multiple>
+            <option value="tecnología">Tecnología</option>
+            <option value="arte">Arte</option>
+            <option value="ciencia">Ciencia</option>
+            <option value="música">Música</option>
+        </select><br><br>
+
+        <label for="suscripcion">¿Deseas recibir nuestra newsletter?</label><br>
+        <input type="checkbox" id="suscripcion" name="suscripcion" value="sí">
+        <label for="suscripcion">Sí, me gustaría suscribirme</label><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
 </body>
 </html>
