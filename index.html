@@ -3,56 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Segunda Página Web</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        img {
-            max-width: 50%;
-            height: auto;
-        }
-    </style>
+    <title>Resumen de Temas CSS</title>
+    <link rel="stylesheet" href="styles5.css">
+   
 </head>
 <body>
 
-    <h1>Bienvenido a Mi Página Web</h1>
-    <p>Esta es una introducción a mi página web. Aquí encontrarás diferentes elementos multimedia.</p>
+    <h1>Resumen de Temas CSS</h1>
 
-    <h2>Lista de Mis Actividades Favoritas</h2>
-    <ol>
-        <li>Leer libros</li>
-        <li>Escuchar música</li>
-        <li>Estudiar</li>
-        <li>Cocinar</li>
-        <li>Ver películas</li>
-        <li>Ver Anime</li>
-    </ol>
+    <h2>Tema 1 - Texto</h2>
+    <table>
+        <tr>
+            <th>Propiedad</th>
+            <th>Valor Inicial</th>
+            <th>Descripción</th>
+        </tr>
+        <tr><td>color</td><td>black</td><td>Define el color del texto.</td></tr>
+        <tr><td>font-family</td><td>serif</td><td>Especifica la fuente del texto.</td></tr>
+        <tr><td>font-size</td><td>medium</td><td>Define el tamaño de la fuente.</td></tr>
+        <tr><td>font-weight</td><td>normal</td><td>Controla el grosor de la fuente.</td></tr>
+        <tr><td>font-style</td><td>normal</td><td>Define el estilo de la fuente.</td></tr>
+        <tr><td>font-variant</td><td>normal</td><td>Especifica la variante de la fuente.</td></tr>
+        <tr><td>text-align</td><td>left</td><td>Especifica la alineación del texto.</td></tr>
+        <tr><td>line-height</td><td>normal</td><td>Controla la altura de la línea.</td></tr>
+        <tr><td>text-decoration</td><td>none</td><td>Define la decoración del texto.</td></tr>
+        <tr><td>text-transform</td><td>none</td><td>Controla la transformación del texto.</td></tr>
+        <tr><td>vertical-align</td><td>baseline</td><td>Define la alineación vertical del texto.</td></tr>
+    </table>
 
-    <h2>Imagen</h2>
-    <p>A continuación, puedes ver una imagen que me gusta:</p>
-    <img src="C:\Users\Administrador\Desktop\georgina\imagenes\deri.jpg" alt="Imagen de ejemplo" width:"100" ; height: "100"> 
-    
-    <p style ="color:rgb(99, 5, 18)"><b> Mi nombre es: Derisbel M.Ruiz.B.</b></p>
+    <h2>Tema 2 - Enlaces</h2>
+    <table>
+        <tr>
+            <th>Característica</th>
+            <th>Propiedades</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>Tamaño, Color y Decoración</td>
+            <td>font-size, color, text-decoration</td>
+            <td>Controlan el tamaño de fuente, color del texto y decoración del enlace.</td>
+        </tr>
+        <tr>
+            <td>Decoración Personalizada</td>
+            <td>border, background-color, padding</td>
+            <td>Permiten personalizar el aspecto del enlace.</td>
+        </tr>
+    </table>
 
-    <h2>Enlace</h2>
-    <p>Puedes visitar <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a> para más información sobre una gran variedad de temas.</p>
+    <h2>Tema 3 - Imágenes</h2>
+    <table>
+        <tr>
+            <th>Característica</th>
+            <th>Propiedades</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>Anchura y Altura</td>
+            <td>width, height</td>
+            <td>Definen el tamaño de la imagen.</td>
+        </tr>
+        <tr>
+            <td>Eliminar el Borde</td>
+            <td>border</td>
+            <td>Establecer border: none; elimina cualquier borde alrededor de la imagen.</td>
+        </tr>
+    </table>
 
-    <h2>Audio</h2>
-    <p>A continuación, puedes escuchar una melodía que me gusta:</p>
-    <audio controls>
-        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio.
-    </audio>
+    <h2>Tema 4 - Listas</h2>
+    <table>
+        <tr>
+            <th>Propiedad</th>
+            <th>Valor Inicial</th>
+            <th>Descripción</th>
+        </tr>
+        <tr><td>list-style-type</td><td>disc</td><td>Define el tipo de marcador para las listas.</td></tr>
+        <tr><td>list-style-position</td><td>outside</td><td>Especifica la posición de los marcadores.</td></tr>
+        <tr><td>list-style-image</td><td>none</td><td>Permite usar una imagen como marcador.</td></tr>
+        <tr><td>list-style</td><td>none</td><td>Propiedad abreviada para las anteriores.</td></tr>
+    </table>
 
-    <h2>Video</h2>
-    <p>Y aquí hay un video interesante sobre la naturaleza:</p>
-    <video width="600" controls>
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-        Tu navegador no soporta el elemento de video.
-    </video>
-
+    <h2>Tema 5 - Tablas</h2>
+    <table>
+        <tr>
+            <th>Propiedad</th>
+            <th>Se Aplica a</th>
+            <th>Valor Inicial</th>
+            <th>Descripción</th>
+        </tr>
+        <tr><td>border-collapse</td><td>table</td><td>separate</td><td>Define si los bordes de las celdas deben colapsar.</td></tr>
+        <tr><td>border-spacing</td><td>table</td><td>0</td><td>Define el espacio entre los bordes de las celdas.</td></tr>
+        <tr><td>empty-cells</td><td>table</td><td>show</td><td>Controla si se muestran las celdas vacías.</td></tr>
+        <tr><td>caption-side</td><td>table</td><td>top</td><td>Especifica la ubicación de la leyenda de la tabla.</td></tr>
+    </table>
 
 </body>
 </html>
